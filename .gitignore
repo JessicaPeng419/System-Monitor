@@ -1,0 +1,10 @@
+monitor
+a.out
+settings.json
+*.o
+build/*
+*.json
+.github/**
+
+# Project exclude paths
+/cmake-build-debug/
