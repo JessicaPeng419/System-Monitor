@@ -11,7 +11,7 @@ using std::string;
 using std::to_string;
 using std::vector;
 
-void Process::Pid(int procId) { procId_ = procId; }
+void Process::Pid(int Id) { procId_ = Id; }
 
 // COMPLETED: Return this process's ID
 int Process::Pid() { return procId_; }
