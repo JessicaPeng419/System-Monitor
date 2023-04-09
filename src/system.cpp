@@ -27,7 +27,7 @@ vector<Process>& System::Processes() {
   vector<Process> temp_proc{};
   for (int pid : pids) {
     Process proc;
-    proc.Pid();
+    proc.Pid(pid);
     temp_proc.emplace_back(proc);
   }
   std::copy_if(temp_proc.begin(), temp_proc.end(), std::back_inserter(processes_), [](Process p){return p.Command()!= "";});
